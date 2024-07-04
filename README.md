@@ -17,7 +17,7 @@ To run the code, follow the steps below:
 
    ```bash
    git clone https://github.com/your_username/your_repository.git
-   cd your_repository
+   cd https://github.com/sadegh15khedry/CreditCard-Transaction-Anomaly-Detection-Using-IsolationForest
    ```
 
 2. Install dependencies:
