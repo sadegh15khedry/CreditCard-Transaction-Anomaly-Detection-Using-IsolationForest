@@ -2,14 +2,12 @@
 
 This project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
 
-## Getting Started
-
-To run the code, follow the steps below:
-
-### Prerequisites
-
-- Python 3.x
-- Required Python packages: pandas, matplotlib, seaborn, scikit-learn
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Code Structure](#code-structure)
+4. [Features](#Ffeatures)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ### Installation
 
