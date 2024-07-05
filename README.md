@@ -5,7 +5,7 @@ This project implements anomaly detection in credit card transactions using the 
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Code Structure](#code-structure)
-4. [Features](#Ffeatures)
+4. [Features](#features)
 5. [Contributing](#contributing)
 6. [License](#license)
 
