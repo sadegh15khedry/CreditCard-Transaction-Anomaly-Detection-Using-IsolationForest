@@ -1,5 +1,7 @@
 import matplotlib.pylab as plt
 from matplotlib.pyplot import plot
+from sklearn.ensemble import IsolationForest
+
 
 def visualize_results(df):  
     df['Label'].plot(kind='hist')
@@ -29,3 +31,8 @@ def detect_anomaly(model_IF, df):
 
     print(df)
     return df
+
+
+def get_Isolation_forest_model():
+    model = IsolationForest(contamination='auto', random_state=33)
+    return model
