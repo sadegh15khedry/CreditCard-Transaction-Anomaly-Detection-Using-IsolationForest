@@ -2,14 +2,12 @@
 
 This project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
 
-## Getting Started
-
-To run the code, follow the steps below:
-
-### Prerequisites
-
-- Python 3.x
-- Required Python packages: pandas, matplotlib, seaborn, scikit-learn
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Code Structure](#code-structure)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ### Installation
 
@@ -17,13 +15,12 @@ To run the code, follow the steps below:
 
    ```bash
    git clone https://github.com/your_username/your_repository.git
-   cd https://github.com/sadegh15khedry/CreditCard-Transaction-Anomaly-Detection-Using-IsolationForest
+   cd CreditCard-Transaction-Anomaly-Detection-Using-IsolationForest
    ```
 
-2. Install dependencies:
-
+2. Install the required libraries using the environment.yml file using conda:
    ```bash
-   pip install pandas matplotlib seaborn scikit-learn
+   conda env create -f environment.yml
    ```
 
 ### Usage
@@ -33,11 +30,9 @@ To run the code, follow the steps below:
    Get the dataset from kaggle using https://www.kaggle.com/datasets/ybifoundation/credit-card-transaction
    Ensure the dataset `CreditCardTransaction.csv` is placed in the appropriate directory or update the file path in the code (`pd.read_csv("drive/MyDrive/CreditCardTransaction.csv")`).
 
-3. Run the code:
-
-   ```bash
-   python anomaly_detection_credit_card.py
-   ```
+2. Run the notebooks:
+   
+   Run the notebooks using the conda environment.
 
 4. Explore the results:
    
@@ -45,7 +40,10 @@ To run the code, follow the steps below:
 
 ## Code Structure
 
-- `anomaly_detection_credit_card.py`: Main script that loads data, preprocesses it, applies Isolation Forest, and visualizes anomalies.
+- `creditcard_transaction_anomaly_detection.ipynb`: Main script that loads processed data, applies Isolation Forest, and visualizes anomalies.
+- `data_exploration.ipynb`: notebook that explores the data.
+- `data_preprocessing.ipynb`: notebooks that prepares data for training.
+
   
 ## Features
 
