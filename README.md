@@ -1,5 +1,5 @@
 # Anomaly Detection in Credit Card Transactions
-
+The Isolation Forest is a powerful tool for detecting fraudulent credit card transactions. Its unsupervised nature allows it to detect anomalies in datasets without requiring labeled data, making it particularly useful in situations where fraudulent transactions are rare and unpredictable. 
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 - 
 
 ## Overview
-IThis project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
+This project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
 
 ### Installation
 
