@@ -1,13 +1,20 @@
 # Anomaly Detection in Credit Card Transactions
 
-This project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Code Structure](#code-structure)
-4. [Features](#features)
-5. [Contributing](#contributing)
-6. [License](#license)
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation Guide](#installation-guide)
+- [Directory Structure](#directory-structure)
+- [Files and Functions](#files-and-functions)
+- [Results](#Results)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- 
+
+## Overview
+IThis project implements anomaly detection in credit card transactions using the Isolation Forest algorithm. The dataset used includes transaction details such as year, month, department, division, merchant, and transaction amount.
 
 ### Installation
 
@@ -22,49 +29,68 @@ This project implements anomaly detection in credit card transactions using the 
    ```bash
    conda env create -f environment.yml
    ```
+3. activate conda environment
+   ```bash
+   conda activate anomaly-detection
+   ```
+4. Dataset:
+   get the dataset using the following link https://www.kaggle.com/datasets/ybifoundation/credit-card-transaction
 
-### Usage
-
-1. Load the dataset:
-   
-   Get the dataset from kaggle using https://www.kaggle.com/datasets/ybifoundation/credit-card-transaction
-   Ensure the dataset `CreditCardTransaction.csv` is placed in the appropriate directory or update the file path in the code (`pd.read_csv("drive/MyDrive/CreditCardTransaction.csv")`).
-
-2. Run the notebooks:
+5. Run the notebooks:
    
    Run the notebooks using the conda environment.
 
-4. Explore the results:
+6. Explore the results:
    
    - The code performs exploratory data analysis, preprocessing, applies Isolation Forest for anomaly detection, and visualizes anomalies detected.
 
-## Code Structure
+## Folder Structure
 
-- `creditcard_transaction_anomaly_detection.ipynb`: Main script that loads processed data, applies Isolation Forest, and visualizes anomalies.
-- `data_exploration.ipynb`: notebook that explores the data.
-- `data_preprocessing.ipynb`: notebooks that prepares data for training.
+The project folder structure is organized as follows:
+```
+CreditCard-Transaction-Anomaly-Detection-Using-IsolationForest/
+├── src
+│ ├── utils.py
+│ ├── anomaly_detection.py
+│ ├── data_preprocessing.py
+│ └── data_exploration.py
+├── notebooks
+│ ├── data_exploration.ipynb
+│ ├── data_preprocessing.ipynb
+│ └── anomaly_detection.ipynb
+├── LICENSE
+├── environment.yml
+└── README.md
+```
 
-  
-## Features
+## Files and Functions
 
-- **Data Loading**: Loads credit card transaction data from a CSV file.
-  
-- **Exploratory Data Analysis**: Analyzes data distribution, checks for missing values, and explores relationships between variables.
-  
-- **Preprocessing**: Handles missing values, encodes categorical variables using LabelEncoder, and normalizes numerical features using z-score method.
-  
-- **Isolation Forest**: Utilizes Isolation Forest algorithm for unsupervised anomaly detection.
-  
-- **Visualization**: Uses matplotlib and seaborn for visualizing data distributions, scatter plots, and anomalies detected.
+- `utils.py` : Utility functions for various tasks.
+- `anomaly_detection.py` : Functions for anomaly detection.py.
+- `data_preprocessing.py` : Functions for data preprocessing.
+- `data_exploration.py` : Functions for data exploration.
+- `data_exploration.ipynb`: Notebook for data exploration.
+- `data_preprocessing.ipynb`: Notebook for data preprocessing.
+- `anomaly_detection.py`: Notebook for anomaly detection.
+
+
+## Results
+
+The following is the visulized result for 0.001 of data.
+
+![results](https://github.com/user-attachments/assets/1c5304f2-4632-4ae3-8678-b0623eb390c8)
+
 
 ## Contributing
 
 Contributions are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-This project is licensed under the Apache-2.0 License - see the LICENSE file for details.
 
 ## Acknowledgments
 
 - Inspired by tutorials and examples on anomaly detection and Isolation Forest.
+
+## License
+
+This project is licensed under the Apache-2.0 License - see the LICENSE file for details.
+
